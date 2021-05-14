@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录-寻浪媒介</title>
+    <link rel="stylesheet" href="/assets/css/common.css" />
+    <link rel="stylesheet" href="/assets/layui/css/layui.css" />
+    <link rel="stylesheet" href="/assets/css/login.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <a href="/page/index.html"><img src="/assets/img/logo.png" alt=""></a>
+    </div>
+    <div class="login-swiper">
+      <ul class="slides">
+        <li style="background: url('/assets/img/bg-1.jpg') center"></li>
+        <li style="background: url('/assets/img/bg-2.jpg') center"></li>
+        <li style="background: url('/assets/img/bg-3.jpg') center"></li>
+        <li style="background: url('/assets/img/bg-4.jpg') center"></li>
+      </ul>
+    </div>
+    <div class="login-wraper">
+      <div class="form-container"></div>
+      <div class="login-footer">
+        Copyright © 2021 合肥寻浪传媒有限公司<br>
+        皖公网安备 33011002015248号<br>
+        皖ICP备20012079号-3
+      </div>
+    </div>
+
+    <!-- 密码登录模板 -->
+    <script id="login-mm-tpl" type="text/html">
+      <div class="login-form layui-form">
+        <h1 class="title">欢迎登录!</h1>
+        <div class="login-tabs">
+          <ul>
+            <li class="cur" id="mm-login">密码登录</li>
+            <li id="yzm-login">验证码登录</li>
+          </ul>
+        </div>
+        <div class="form-item">
+          <input
+            type="text"
+            name="tel"
+            placeholder="手机号码"
+            autocomplete="off"
+            class="layui-input"
+            lay-verify="required|phone"
+          />
+        </div>
+        <div class="form-item posrel">
+          <input
+            type="password"
+            name="pwd"
+            placeholder="密码"
+            autocomplete="off"
+            class="layui-input"
+            lay-verify="required"
+          />
+          <i class="eyes-icon"></i>
+        </div>
+        <div class="form-item">
+          <input
+            type="checkbox"
+            name="status"
+            lay-skin="primary"
+            title="登录即表明同意 <a href='' target='_blank'>服务协议</a> 和 <a href='' target='_blank'>隐私条款</a>"
+            checked=""
+          />
+        </div>
+        <button
+          class="layui-btn layui-btn-fluid"
+          lay-submit=""
+          lay-filter="login-submit"
+        >
+          登录
+        </button>
+        <div class="form-item clearfix">
+          <a href="javascript:;" class="fl left-btn register-btn">立即注册</a>
+          <a href="javascript:;" class="fr right-btn forget-btn">忘记密码？</a>
+        </div>
+
+        <div class="other-way">
+          其他方式
+          <a href="">
+            <img src="/assets/img/wx-icon.png" alt="微信" />
+          </a>
+          <a href="">
+            <img src="/assets/img/qq-icon.png" alt="QQ" />
+          </a>
+        </div>
+      </div>
+    </script>
+
+    <!-- 验证码登录模板 -->
+    <script id="login-yzm-tpl" type="text/html">
+      <div class="login-form layui-form">
+        <h1 class="title">欢迎登录!</h1>
+        <div class="login-tabs">
+          <ul>
+            <li id="mm-login">密码登录</li>
+            <li class="cur" id="yzm-login">验证码登录</li>
+          </ul>
+        </div>
+        <div class="form-item">
+          <input
+            type="text"
+            name="tel"
+            placeholder="手机号码"
+            autocomplete="off"
+            class="layui-input"
+            lay-verify="required|phone"
+          />
+        </div>
+        <div class="form-item posrel">
+          <input
+            type="text"
+            name="yzm"
+            lay-verify="required"
+            placeholder="验证码"
+            autocomplete="off"
+            class="layui-input"
+          />
+          <button class="yzm-btn" id="get_yzm">发送验证码</button>
+        </div>
+        <div class="form-item">
+          <input
+            type="checkbox"
+            name="status"
+            lay-skin="primary"
+            title="登录即表明同意 <a href='' target='_blank'>服务协议</a> 和 <a href='' target='_blank'>隐私条款</a>"
+            checked=""
+          />
+        </div>
+        <button
+          class="layui-btn layui-btn-fluid"
+          lay-submit=""
+          lay-filter="login-submit"
+        >
+          登录
+        </button>
+        <div class="form-item clearfix">
+          <a href="javascript:;" class="fl left-btn register-btn">立即注册</a>
+          <a href="javascript:;" class="fr right-btn forget-btn">忘记密码？</a>
+        </div>
+
+        <div class="other-way">
+          其他方式
+          <a href="">
+            <img src="/assets/img/wx-icon.png" alt="微信" />
+          </a>
+          <a href="">
+            <img src="/assets/img/qq-icon.png" alt="QQ" />
+          </a>
+        </div>
+      </div>
+    </script>
+
+    <!-- 注册模板 -->
+    <script id="register-tpl" type="text/html">
+      <div class="login-form layui-form">
+        <h1 class="title">注册寻浪账号</h1>
+        <div class="form-item">
+          <input
+            type="text"
+            name="tel"
+            placeholder="手机号码"
+            autocomplete="off"
+            class="layui-input"
+            lay-verify="required|phone"
+          />
+        </div>
+        <div class="form-item posrel">
+          <input
+            type="password"
+            name="pwd1"
+            placeholder="密码"
+            autocomplete="off"
+            class="layui-input"
+            lay-verify="required"
+          />
+          <i class="eyes-icon"></i>
+        </div>
+        <div class="form-item posrel">
+          <input
+            type="password"
+            name="pwd2"
+            placeholder="确认密码"
+            autocomplete="off"
+            class="layui-input"
+            lay-verify="required"
+          />
+          <i class="eyes-icon"></i>
+        </div>
+        <div class="form-item posrel">
+          <input
+            type="text"
+            name="yzm"
+            lay-verify="required"
+            placeholder="验证码"
+            autocomplete="off"
+            class="layui-input"
+          />
+          <button class="yzm-btn" id="get_yzm">发送验证码</button>
+        </div>
+        <div class="form-item">
+          <input
+            type="checkbox"
+            name="status"
+            lay-skin="primary"
+            title="登录即表明同意 <a href='' target='_blank'>服务协议</a> 和 <a href='' target='_blank'>隐私条款</a>"
+            checked=""
+          />
+        </div>
+        <button
+          class="layui-btn layui-btn-fluid"
+          lay-submit=""
+          lay-filter="register-submit"
+        >
+          登录
+        </button>
+        <div class="form-item clearfix">
+          <a href="javascript:;" class="fl left-btn login-btn">去登录</a>
+          <a href="javascript:;" class="fr right-btn forget-btn">忘记密码？</a>
+        </div>
+      </div>
+    </script>
+
+    <!-- 忘记密码 -->
+    <script id="forget-tpl" type="text/html">
+      <div class="login-form layui-form">
+        <h1 class="title">找回密码</h1>
+        <div class="form-item">
+          <input
+            type="text"
+            name="tel"
+            placeholder="手机号码"
+            autocomplete="off"
+            class="layui-input"
+            lay-verify="required|phone"
+          />
+        </div>
+        <div class="form-item posrel">
+          <input
+            type="text"
+            name="yzm"
+            lay-verify="required"
+            placeholder="验证码"
+            autocomplete="off"
+            class="layui-input"
+          />
+          <button class="yzm-btn" id="get_yzm">发送验证码</button>
+        </div>
+        <div class="form-item posrel">
+          <input
+            type="password"
+            name="pwd1"
+            placeholder="密码"
+            autocomplete="off"
+            class="layui-input"
+            lay-verify="required"
+          />
+          <i class="eyes-icon"></i>
+        </div>
+        <div class="form-item posrel">
+          <input
+            type="password"
+            name="pwd2"
+            placeholder="确认密码"
+            autocomplete="off"
+            class="layui-input"
+            lay-verify="required"
+          />
+          <i class="eyes-icon"></i>
+        </div>
+        <div class="form-item">
+          <input
+            type="checkbox"
+            name="status"
+            lay-skin="primary"
+            title="登录即表明同意 <a href='' target='_blank'>服务协议</a> 和 <a href='' target='_blank'>隐私条款</a>"
+            checked=""
+          />
+        </div>
+        <button
+          class="layui-btn layui-btn-fluid"
+          lay-submit=""
+          lay-filter="forget-submit"
+        >
+          登录
+        </button>
+        <div class="form-item clearfix">
+          <a href="javascript:;" class="fl left-btn login-btn">去登录</a>
+          <a href="javascript:;" class="fr right-btn register-btn">注册</a>
+        </div>
+      </div>
+    </script>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/poposlides.js"></script>
+    <script src="/assets/layui/layui.js"></script>
+    <script src="/assets/js/utils.js"></script>
+    <script>
+      layui.use(['form'], function () {
+        var form = layui.form
+
+        renderTpl('login-mm-tpl')
+
+        //发送验证码
+        $(document).on('click', '#get_yzm', function () {
+          var yzmBtn = $(this)
+          var yzmdis = yzmBtn.attr('disabled')
+          var phone = $("input[name='tel']").val();
+          if (!phone) {
+            layer.msg('请输入手机号码', {
+              icon: 0,
+              time: 1000,
+            })
+            return false
+          }
+          if (!regex.isPhone(phone)) {
+            layer.msg('请输入正确格式的手机号', {
+              icon: 0,
+              time: 1000,
+            })
+            return false
+          }
+          var field = {
+            zh: phone,
+          }
+
+          if (!yzmdis) {
+            // $.ajax({
+            //   url: BASE_URL + '/auth/p_smsyz',
+            //   data: field,
+            //   type: 'post',
+            //   dataType: 'jsonp',
+            //   success: function (res) {
+            //     if (res.code === 1) {
+            //       yzmBtn.attr('disabled', true).addClass('disabled_btn')
+            //       layer.msg(res.msg, {
+            //         icon: 1,
+            //         time: 1000,
+            //       })
+            //       countDown('#get_yzm')
+            //     } else {
+            //       layer.msg(res.msg, {
+            //         icon: 2,
+            //         time: 1000,
+            //       })
+            //       return false
+            //     }
+            //   },
+            // })
+          }
+        })
+
+        // 登录表单提交
+        form.on('submit(login-submit)', function (data) {
+          var field = data.field
+          console.log('field: ', field)
+          if (!field.status) {
+            return layer.msg('请勾选服务协议和隐私条款', { icon: 0 })
+          }
+          return false
+        })
+
+        // 注册表单提交
+        form.on('submit(register-submit)', function (data) {
+          var field = data.field
+          console.log('field: ', field)
+          if (field.pwd1 != field.pwd2) {
+            return layer.msg('密码不一致', { icon: 0 })
+          }
+          if (!field.status) {
+            return layer.msg('请勾选服务协议和隐私条款', { icon: 0 })
+          }
+          return false
+        })
+
+        // 找回密码表单提交
+        form.on('submit(forget-submit)', function (data) {
+          var field = data.field
+          console.log('field: ', field)
+          if (field.pwd1 != field.pwd2) {
+            return layer.msg('密码不一致', { icon: 0 })
+          }
+          if (!field.status) {
+            return layer.msg('请勾选服务协议和隐私条款', { icon: 0 })
+          }
+          return false
+        })
+
+        // 密码登录
+        $(document).on('click', '#mm-login', function () {
+          renderTpl('login-mm-tpl')
+        })
+        $(document).on('click', '.login-btn', function () {
+          renderTpl('login-mm-tpl')
+        })
+        // 验证码登录
+        $(document).on('click', '#yzm-login', function () {
+          renderTpl('login-yzm-tpl')
+        })
+        // 注册
+        $(document).on('click', '.register-btn', function () {
+          renderTpl('register-tpl')
+        })
+        // 忘记密码
+        $(document).on('click', '.forget-btn', function () {
+          renderTpl('forget-tpl')
+        })
+
+        // 背景图轮播
+        $('.slides').poposlides()
+
+        // 密码框显示隐藏切换
+        function pwdIconHandle() {
+          $('.eyes-icon').on('click', function () {
+            var $pwd = $(this).prev()
+            if ($(this).hasClass('eyes-icon-hide')) {
+              $(this).removeClass('eyes-icon-hide')
+              $pwd.attr('type', 'password')
+            } else {
+              $(this).addClass('eyes-icon-hide')
+              $pwd.attr('type', 'text')
+            }
+          })
+        }
+
+        // 表单模板
+        function renderTpl(id) {
+          var tpl = $('#' + id).html()
+          $('.form-container').html('').html(tpl)
+          form.render()
+          pwdIconHandle()
+        }
+      });
+    </script>
+  </body>
+</html>

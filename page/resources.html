@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>官媒资源-寻浪媒介</title>
+  <link rel="stylesheet" href="/assets/css/common.css" />
+  <link rel="stylesheet" href="/assets/layui/css/layui.css" />
+  <link rel="stylesheet" href="/assets/css/resources.css">
+</head>
+<body>
+  <div class="xl-header">
+    <div class="header-top">
+      <div class="content">
+        Hi 欢迎您来到寻浪媒介，软文推广发布一站式服务平台！
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="content">
+        <div class="logo-wraper fl">
+          <a href="/page/index.html">
+            <img src="/assets/img/logo.png" alt="寻浪媒介" />
+          </a>
+        </div>
+
+        <div class="nav-wraper fl">
+          <ul>
+            <li><a href="/page/index.html">首页</a></li>
+            <li class="cur"><a href="/page/resources.html">官媒资源</a></li>
+            <li><a href="/page/resources.html">自媒体资源</a></li>
+            <li><a href="/page/resources.html">软文营销</a></li>
+            <li><a href="/page/dlhz.html">加盟合作</a></li>
+            <li><a href="/page/sxy.html">商学院</a></li>
+            <li><a href="/page/zzfw.html">增值服务</a></li>
+            <li><a href="/page/about.html">关于我们</a></li>
+          </ul>
+        </div>
+
+        <div class="header-right-wraper fr">
+          <div class="search-wraper fl">
+            <form action="" method="get" class="search-box">
+              <input
+                type="text"
+                placeholder="请输入媒体名称"
+                name="gjz"
+                autocomplete="off"
+              />
+              <button type="submit" class="search-submit"></button>
+              <span class="search-mask" style="display: block"></span>
+            </form>
+          </div>
+          <div class="btns-waper fr">
+            <a href="/page/login.html" class="login-reg-btn">登录/注册</a>
+            <!-- <a href="">进入用户中心</a>
+          <a href="">退出</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="resources-wraper">
+    <div class="content">
+      <div class="resources-search">
+        <form action="" method="get" class="res-search-box">
+          <input type="text" placeholder="请输入媒体名称" name="gjz" autocomplete="off" class="res-unfold">
+          <button type="submit" class="res-search-submit"></button>
+        </form>
+      </div>
+
+      <div class="filter-wraper">
+        <div class="filter-item filter-clear">
+          <div class="filter-label">频道类型：</div>
+          <div class="filter-content">
+            <ul class="filter-list filter-clear" data-type="pdlx">
+              <li class="filter-option active" data-value="">不限</li>
+              <li class="filter-option" data-value="30">IT科技</li>
+              <li class="filter-option" data-value="31">生活消费</li>
+              <li class="filter-option" data-value="32">女性时尚</li>
+              <li class="filter-option" data-value="33">娱乐休闲</li>
+              <li class="filter-option" data-value="34">游戏网站</li>
+              <li class="filter-option" data-value="35">汽车网站</li>
+              <li class="filter-option" data-value="36">教育培训</li>
+              <li class="filter-option" data-value="37">酒店旅游</li>
+              <li class="filter-option" data-value="38">健康医疗</li>
+              <li class="filter-option" data-value="39">房产家居</li>
+              <li class="filter-option" data-value="40">财经商业</li>
+              <li class="filter-option" data-value="41">新闻资讯</li>
+              <li class="filter-option" data-value="43">套餐系列</li>
+              <li class="filter-option" data-value="44">最新秒杀</li>
+              <li class="filter-option" data-value="45">十元专区</li>
+              <li class="filter-option" data-value="63">文化艺术</li>
+              <li class="filter-option" data-value="64">体育运动</li>
+              <li class="filter-option" data-value="65">食品餐饮</li>
+              <li class="filter-option" data-value="66">工业贸易</li>
+              <li class="filter-option" data-value="67">亲子母婴</li>
+            </ul>
+            <a href="javascript:;" class="more-btn">更多</a>
+          </div>
+        </div>
+        <div class="filter-item filter-clear">
+          <div class="filter-label">门户网站：</div>
+          <div class="filter-content">
+            <ul class="filter-list filter-clear" data-type="zhmh">
+              <li class="filter-option active" data-value="">不限</li>
+              <li class="filter-option" data-value="新浪网">新浪网</li>
+              <li class="filter-option" data-value="搜狐网">搜狐网</li>
+              <li class="filter-option" data-value="腾讯网">腾讯网</li>
+              <li class="filter-option" data-value="网易网">网易网</li>
+              <li class="filter-option" data-value="凤凰网">凤凰网</li>
+              <li class="filter-option" data-value="中华网">中华网</li>
+              <li class="filter-option" data-value="人民网">人民网</li>
+              <li class="filter-option" data-value="央视网">央视网</li>
+              <li class="filter-option" data-value="千龙网">千龙网</li>
+              <li class="filter-option" data-value="新华网">新华网</li>
+              <li class="filter-option" data-value="中国网">中国网</li>
+              <li class="filter-option" data-value="慧聪网">慧聪网</li>
+              <li class="filter-option" data-value="TOM网">TOM网</li>
+              <li class="filter-option" data-value="21CN网">21CN网</li>
+              <li class="filter-option" data-value="中国日报网">中国日报网</li>
+              <li class="filter-option" data-value="中国经济网">中国经济网</li>
+              <li class="filter-option" data-value="中国新闻网">中国新闻网</li>
+              <li class="filter-option" data-value="中国广播网">中国广播网</li>
+              <li class="filter-option" data-value="垂直媒体">垂直媒体</li>
+              <li class="filter-option" data-value="其他门户">其他门户</li>
+              <li class="filter-option" data-value="光明网">光明网</li>
+              <li class="filter-option" data-value="环球网">环球网</li>
+              <li class="filter-option" data-value="国际在线">国际在线</li>
+              <li class="filter-option" data-value="中国青年网">中国青年网</li>
+              <li class="filter-option" data-value="海外媒体">海外媒体</li>
+            </ul>
+            <a href="javascript:;" class="more-btn">更多</a>
+          </div>
+        </div>
+        <div class="filter-item filter-clear">
+          <div class="filter-label">覆盖区域：</div>
+          <div class="filter-content">
+            <ul class="filter-list filter-clear" data-type="fgqy">
+              <li class="filter-option active" data-value="">不限</li>
+              <li class="filter-option" data-value="综合全国">综合全国</li>
+              <li class="filter-option" data-value="北京">北京</li>
+              <li class="filter-option" data-value="天津">天津</li>
+              <li class="filter-option" data-value="上海">上海</li>
+              <li class="filter-option" data-value="重庆">重庆</li>
+              <li class="filter-option" data-value="河北">河北</li>
+              <li class="filter-option" data-value="山西">山西</li>
+              <li class="filter-option" data-value="辽宁">辽宁</li>
+              <li class="filter-option" data-value="吉林">吉林</li>
+              <li class="filter-option" data-value="黑龙江">黑龙江</li>
+              <li class="filter-option" data-value="江苏">江苏</li>
+              <li class="filter-option" data-value="浙江">浙江</li>
+              <li class="filter-option" data-value="安徽">安徽</li>
+              <li class="filter-option" data-value="福建">福建</li>
+              <li class="filter-option" data-value="江西">江西</li>
+              <li class="filter-option" data-value="山东">山东</li>
+              <li class="filter-option" data-value="河南">河南</li>
+              <li class="filter-option" data-value="湖北">湖北</li>
+              <li class="filter-option" data-value="湖南">湖南</li>
+              <li class="filter-option" data-value="广东">广东</li>
+              <li class="filter-option" data-value="甘肃">甘肃</li>
+              <li class="filter-option" data-value="四川">四川</li>
+              <li class="filter-option" data-value="贵州">贵州</li>
+              <li class="filter-option" data-value="海南">海南</li>
+              <li class="filter-option" data-value="云南">云南</li>
+              <li class="filter-option" data-value="青海">青海</li>
+              <li class="filter-option" data-value="陕西">陕西</li>
+              <li class="filter-option" data-value="新疆">新疆</li>
+              <li class="filter-option" data-value="宁夏">宁夏</li>
+              <li class="filter-option" data-value="内蒙古">内蒙古</li>
+              <li class="filter-option" data-value="西藏">西藏</li>
+              <li class="filter-option" data-value="广西">广西</li>
+            </ul>
+            <a href="javascript:;" class="more-btn">更多</a>
+          </div>
+        </div>
+        <div class="filter-item filter-clear">
+          <div class="filter-label">特别行业：</div>
+          <div class="filter-content">
+            <ul class="filter-list filter-clear" data-type="tbhy">
+              <li class="filter-option active" data-value="">不限</li>
+              <li class="filter-option" data-value="1">p2p</li>
+              <li class="filter-option" data-value="2">微商</li>
+              <li class="filter-option" data-value="3">留学</li>
+              <li class="filter-option" data-value="4">健康</li>
+              <li class="filter-option" data-value="5">加盟</li>
+              <li class="filter-option" data-value="6">白名单来源</li>
+              <li class="filter-option" data-value="7">移动端媒体</li>
+              <li class="filter-option" data-value="8">需求来源媒体</li>
+              <li class="filter-option" data-value="9">首页焦点图</li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter-item filter-clear">
+          <div class="filter-label">发稿速度：</div>
+          <div class="filter-content">
+            <ul class="filter-list filter-clear" data-type="fgsd">
+              <li class="filter-option active" data-value="">不限</li>
+              <li class="filter-option" data-value="1">一小时</li>
+              <li class="filter-option" data-value="2">二小时内</li>
+              <li class="filter-option" data-value="12"> 半天</li>
+              <li class="filter-option" data-value="24">当天</li>
+              <li class="filter-option" data-value="48">两天</li>
+            </ul>
+          </div>
+        </div>
+        <div class="filter-item filter-clear">
+          <div class="filter-label">其他筛选：</div>
+          <div class="filter-content layui-form">
+            <div class="filter-search">
+              <select name="modules">
+                <option value="">价格分区</option>
+                <option value="">不限</option>
+                <option value="50">0~50</option>
+                <option value="100">51~100</option>
+                <option value="200">101~200</option>
+                <option value="201">200以上</option>
+              </select>
+            </div>
+            <div class="filter-search">
+              <select name="modules">
+                <option value="">收录情况</option>
+                <option value="">不限</option>
+                <option value="0">不包收录</option>
+                <option value="1">包收录</option>
+              </select>
+            </div>
+            <div class="filter-search">
+              <select name="modules">
+                <option value="">链接类型</option>
+                <option value="">不限</option>
+                <option value="0">不可带网址</option>
+                <option value="2">可带网址</option>
+              </select>
+            </div>
+            <div class="filter-search">
+              <select name="modules">
+                <option value="">新闻源</option>
+                <option value="">不限</option>
+                <option value="1">百度新闻源</option>
+                <option value="0">非百度新闻源</option>
+              </select>
+            </div>
+            <div class="filter-search">
+              <select name="modules">
+                <option value="">发稿时间</option>
+                <option value="">不限</option>
+                <option value="0">周末不可发</option>
+                <option value="1">周末可发</option>
+              </select>
+            </div>
+            <div class="filter-search">
+              <select name="modules">
+                <option value="">入口级别</option>
+                <option value="">不限</option>
+                <option value="1">没有入口</option>
+                <option value="2">首页入口</option>
+                <option value="3">频道入口</option>
+                <option value="4">上级入口</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-wraper">
+        <table>
+            <thead>
+              <tr>
+                <th width="90" class="tl">频道类型</th>
+                <th class="tl">媒体名称</th>
+                <th width="80">会员价格</th>
+                <th width="80">代理商价格</th>
+                <th width="70">出稿率</th>
+                <th width="80">电脑权重</th>
+                <th width="80">移动权重</th>
+                <th width="110" class="tl">新闻源</th>
+                <th width="100">链接情况</th>
+                <th width="200">备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tl">新闻资讯</td>
+                <td class="tl"><a href="" target="_blank">中国山东网</a></td>
+                <td><span class="price">24.00</span></td>
+                <td>V2可看</td>
+                <td>73%</td>
+                <td><div class="qz">1</div></td>
+                <td><div class="qz">2</div></td>
+                <td class="tl">非百度新闻源</td>
+                <td>不可带网址</td>
+                <td><div class="bz">审核松 出搞快 周末可发</div></td>
+              </tr>
+              <tr>
+                <td class="tl">财经商业</td>
+                <td class="tl"><a href="" target="_blank">中国新闻网安</a></td>
+                <td><span class="price">124.00</span></td>
+                <td>V3可看</td>
+                <td>83%</td>
+                <td><div class="qz">0</div></td>
+                <td><div class="qz">2</div></td>
+                <td class="tl">百度新闻源</td>
+                <td>可带网址</td>
+                <td><div class="bz">修改不通知，官方下线或账号…</div></td>
+              </tr>
+              <tr>
+                <td class="tl">新闻资讯</td>
+                <td class="tl"><a href="" target="_blank">中国山东网</a></td>
+                <td><span class="price">24.00</span></td>
+                <td>V2可看</td>
+                <td>73%</td>
+                <td><div class="qz">1</div></td>
+                <td><div class="qz">2</div></td>
+                <td class="tl">非百度新闻源</td>
+                <td>不可带网址</td>
+                <td><div class="bz">审核松 出搞快 周末可发</div></td>
+              </tr>
+              <tr>
+                <td class="tl">财经商业</td>
+                <td class="tl"><a href="" target="_blank">中国新闻网安</a></td>
+                <td><span class="price">124.00</span></td>
+                <td>V3可看</td>
+                <td>83%</td>
+                <td><div class="qz">0</div></td>
+                <td><div class="qz">2</div></td>
+                <td class="tl">百度新闻源</td>
+                <td>可带网址</td>
+                <td><div class="bz">修改不通知，官方下线或账号…</div></td>
+              </tr>
+              <tr>
+                <td class="tl">新闻资讯</td>
+                <td class="tl"><a href="" target="_blank">中国山东网</a></td>
+                <td><span class="price">24.00</span></td>
+                <td>V2可看</td>
+                <td>73%</td>
+                <td><div class="qz">1</div></td>
+                <td><div class="qz">2</div></td>
+                <td class="tl">非百度新闻源</td>
+                <td>不可带网址</td>
+                <td><div class="bz">审核松 出搞快 周末可发</div></td>
+              </tr>
+              <tr>
+                <td class="tl">财经商业</td>
+                <td class="tl"><a href="" target="_blank">中国新闻网安</a></td>
+                <td><span class="price">124.00</span></td>
+                <td>V3可看</td>
+                <td>83%</td>
+                <td><div class="qz">0</div></td>
+                <td><div class="qz">2</div></td>
+                <td class="tl">百度新闻源</td>
+                <td>可带网址</td>
+                <td><div class="bz">修改不通知，官方下线或账号…</div></td>
+              </tr>
+            </tbody>
+        </table>
+
+        <div id="pagination"></div>
+      </div>
+
+      <div class="channels-wraper">
+        <h2 class="title">
+          <strong>热门渠道</strong>
+          根据你的浏览情况，我们给你推荐
+        </h2>
+        <div class="channels-box">
+          <ul class="clearfix">
+            <li>
+              <a href="" target="_blank">
+                <img src="https://temp.im/160x90" alt="">
+                <h3>企业观察网商业</h3>
+                <p>出稿速度：2小时37分内</p>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="https://temp.im/160x90" alt="">
+                <h3>企业观察网商业</h3>
+                <p>出稿速度：2小时37分内</p>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="https://temp.im/160x90" alt="">
+                <h3>企业观察网商业</h3>
+                <p>出稿速度：2小时37分内</p>
+              </a>
+            </li>
+            <li>
+              <a href="" target="_blank">
+                <img src="https://temp.im/160x90" alt="">
+                <h3>企业观察网商业</h3>
+                <p>出稿速度：2小时37分内</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="xl-footer">
+    <div class="publish-banner">
+      <p>发布文章，开启您的互联网营销之路</p>
+      <button class="button button--wapasha">立即发布</button>
+    </div>
+
+    <div class="footer-wraper">
+      <div class="content">
+        <div class="foot-row">
+          <div class="foot-logo-box fl">
+            <img src="/assets/img/logo.png" alt="寻浪媒介" class="logo" />
+            <p class="hotline">客服热线 400-993-9050</p>
+            <img src="/assets/img/qrcode.png" class="qrcode" />
+          </div>
+
+          <div class="foot-nav fr">
+            <dl>
+              <dt><a href="">首页</a></dt>
+              <dd><a href="">营销案例</a></dd>
+              <dd><a href="">我们的服务</a></dd>
+              <dd><a href="">发布流程</a></dd>
+              <dd><a href="">代理流程</a></dd>
+            </dl>
+            <dl>
+              <dt><a href="">资源</a></dt>
+              <dd><a href="">官媒列表</a></dd>
+              <dd><a href="">推荐媒体</a></dd>
+              <dd><a href="">新增媒体</a></dd>
+            </dl>
+            <dl>
+              <dt><a href="">加盟合作</a></dt>
+              <dd><a href="">我们的优势</a></dd>
+              <dd><a href="">代理权益</a></dd>
+              <dd><a href="">等级权益</a></dd>
+            </dl>
+            <dl>
+              <dt><a href="">增值服务</a></dt>
+              <dd><a href="">活动策划</a></dd>
+              <dd><a href="">品牌策划</a></dd>
+              <dd><a href="">新媒体运营</a></dd>
+            </dl>
+            <dl>
+              <dt><a href="">商学院</a></dt>
+              <dd><a href="">品牌曝光</a></dd>
+              <dd><a href="">推广案例</a></dd>
+              <dd><a href="">寻浪头条</a></dd>
+              <dd><a href="">营销课堂</a></dd>
+            </dl>
+            <dl>
+              <dt><a href="">关于我们</a></dt>
+              <dd><a href="">企业介绍</a></dd>
+              <dd><a href="">员工风采</a></dd>
+              <dd><a href="">联系我们</a></dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="foot-flink">
+          友情链接：
+          <a href="" target="_blank">聚名科技</a>
+          <a href="" target="_blank">雷米科技</a>
+          <a href="" target="_blank">玩米网</a>
+          <a href="" target="_blank">易企服</a>
+          <a href="" target="_blank">龙门标局</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        Copyright © 2021 合肥寻浪传媒有限公司 皖公网安备 33011002015248号
+        皖ICP备20012079号-3
+      </div>
+    </div>
+  </div>
+
+  <div class="xl-sidebar">
+    <ul>
+      <li class="contact-us">
+        <i class="icon icon1"></i>
+        <p class="ms">联系我们</p>
+        <div class="contact-box">
+          <div class="code fl">
+            <img src="/assets/img/wxcode.png">
+            <p>扫码加微信</p>
+          </div>
+          <dic class="content fr">
+            专属客服：罗焱<br>
+            QQ：1033159789<br>
+            电话：13966872341
+          </dic>
+        </div>
+      </li>
+      <li>
+        <i class="icon icon2"></i>
+        <p class="ms">我要发稿</p>
+      </li>
+      <li class="back-top">
+        <i class="icon icon3"></i>
+        <p class="ms">返回顶部</p>
+      </li>
+    </ul>
+  </div>
+
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/layui/layui.js"></script>
+  <script src="/assets/js/common.js"></script>
+  <script>
+    $('.more-btn').on('click', function(){
+      var $filterList = $(this).prev();
+      if($filterList.hasClass('filter-list-height')) {
+        $filterList.removeClass('filter-list-height');
+        $(this).text('更多');
+      } else {
+        $filterList.addClass('filter-list-height');
+        $(this).text('收起');
+      }
+    });
+
+    layui.use(['form', 'laypage'], function () {
+        var form = layui.form,
+            laypage = layui.laypage;
+
+        
+        laypage.render({
+          elem: 'pagination'
+          ,count: 70 //数据总数
+          ,jump: function(obj){
+            console.log(obj)
+          }
+        });
+
+        console.log($('.layui-anim').length)
+
+        for(var i = 0; i < $('.layui-anim').length; i++) {
+          $('.layui-anim').eq(i).find('dd').first().hide();
+        }
+    });
+  </script>
+</body>
+</html>

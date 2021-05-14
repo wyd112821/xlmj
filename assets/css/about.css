@@ -1,0 +1,185 @@
+.banner-wraper{
+  position: relative;
+  width: 100%;
+  height: 428px;
+  overflow: hidden;
+}
+
+.banner-wraper img{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.about-wraper{
+  width: 100%;
+  background-color: #fff;
+}
+
+.about-wraper .content{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 110px 0 80px;
+  overflow: hidden;
+  background: url(../img/who_bg.png) no-repeat right center;
+}
+
+.about-info{
+  width: 540px;
+}
+.about-info h2{
+  margin-bottom: 40px;  
+  line-height: 42px;
+  font-size: 18px;
+  color: #657085;
+}
+
+.about-info h2 strong{
+  font-size: 36px;
+  font-weight: normal;
+  color: #000;
+}
+
+.about-info p{
+  line-height: 32px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.about-img{
+  width: 400px;
+  height: 400px;
+  margin-right: 136px;
+}
+
+.about-img img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.resources-wraper{
+  padding: 60px 0;
+  background: #F6F8FA;
+}
+
+.title-wraper{
+  width: 1200px;
+  margin: 0 auto 30px;
+}
+
+.title-wraper h2{
+  font-size: 36px;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.resources-box{
+  width: 100%;
+}
+
+.roll-wrap{
+  position: relative;
+  width: 100%;
+  height: 340px;
+  overflow: hidden;
+}
+
+.roll-wrap .roll__list{
+  position: absolute;
+  top: 0;
+  width: 9999px;
+}
+
+.roll-wrap li{
+  float: left;
+  overflow: hidden;
+}
+
+.roll-wrap li img{
+  width: 100%;
+}
+
+.team-wraper{
+  padding: 60px 0;
+  background-color: #fff;
+}
+
+.team-box{
+  width: 100%;
+  margin-top: 60px;
+}
+
+.team-box img{
+  width: 100%;
+}
+
+.relation-wraper{
+  padding: 60px 0;
+  background-color: #F6F8FA;
+}
+
+.relation-box{
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 40px auto 0;
+  padding: 9px;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.relation-info{
+  width: 360px;
+  padding-left: 30px;
+  padding-top: 26px;
+}
+.relation-item{
+  width: 260px;
+  padding-left: 52px;
+  margin-bottom: 20px;
+  background: url(../img/contact_us_icons.png) no-repeat;
+  color: #333;
+}
+
+.relation-item:last-child{
+  margin-bottom: 0;
+}
+
+.relation-item1{
+  background-position: 0 12px;
+}
+.relation-item2{
+  background-position: 0 -84px;
+}
+.relation-item3{
+  background-position: 0 -176px;
+}
+
+.relation-item p.name{
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.relation-item p.con{
+  padding: 8px 0 18px;
+  line-height: 25px;
+  font-size: 18px;
+  border-bottom: 1px solid rgba(219, 219, 219, 0.4);
+}
+
+.relation-item:last-child p.con{
+  border-bottom: none;
+}
+
+.map-iframe{
+  width: 754px;
+  height: 292px;
+  border-radius: 12px;
+  overflow: hidden;
+}

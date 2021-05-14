@@ -1,0 +1,221 @@
+body,html{
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.layui-form-checkbox, .layui-form-checkbox *, .layui-form-switch{
+  vertical-align: top;
+}
+
+.layui-input::-webkit-input-placeholder { 
+  /* WebKit browsers */ 
+  color: #ccc; 
+} 
+.layui-input:-moz-placeholder { 
+  /* Mozilla Firefox 4 to 18 */ 
+  color: #ccc; 
+} 
+.layui-input::-moz-placeholder { 
+  /* Mozilla Firefox 19+ */ 
+  color: #ccc; 
+} 
+.layui-input:-ms-input-placeholder { 
+  /* Internet Explorer 10+ */ 
+  color: #ccc; 
+}
+
+.logo{
+  position: absolute;
+  left: 60px;
+  top: 40px;
+  z-index: 100;
+}
+.login-swiper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  float: left;
+}
+.slides li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slides li img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.prev,
+.next {
+  position: absolute;
+  z-index: 99;
+  bottom: 90px;
+  margin-top: -40px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev{
+  right: 640px;
+  background: url(../img/arr-left.png) no-repeat center center rgba(255, 255, 255, 0.1);
+}
+.next{
+  right: 570px;
+  background: url(../img/arr-right.png) no-repeat center center rgba(255, 255, 255, 0.1);
+}
+
+.login-swiper .pagination{
+  display: none !important;
+}
+
+.login-wraper{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 480px;
+  height: 100%;
+  padding: 100px 100px 90px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border-radius: 12px 0px 0px 12px;
+}
+
+.login-form h1.title{
+  margin-bottom: 30px;
+  line-height: 36px;
+  font-size: 26px;
+  color: #000;
+}
+
+.login-tabs{
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.login-tabs ul{
+  overflow: hidden;
+}
+
+.login-tabs li{
+  position: relative;
+  float: left;
+  margin-right: 40px;
+  line-height: 22px;
+  padding: 8px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-tabs li.cur{
+  color: #4173FF;
+}
+
+.login-tabs li.cur::after{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #4173FF;
+}
+
+.login-form .form-item{
+  margin-bottom: 24px;
+}
+
+.login-form .layui-input{
+  padding-left: 0;
+  border: none;
+  border-bottom: 1px solid #F3F6FA;
+}
+
+.posrel{
+  position: relative;
+}
+
+.eyes-icon{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/pwd-hide.png) no-repeat;
+  cursor: pointer;
+}
+
+.eyes-icon-hide{
+  background: url(../img/pwd-show.png) no-repeat;
+}
+
+.login-form .layui-form-checked[lay-skin=primary] i{
+  border-color: #4173FF !important;
+  background-color: #4173FF;
+}
+
+.login-form .layui-btn{
+  height: 40px;
+  border-radius: 4px;
+  background-color: #4173FF;
+  font-size: 16px;
+}
+
+.left-btn{
+  padding-top: 10px;
+  color: #4173FF;
+}
+
+.left-btn:hover{
+  color: #2157ec;
+}
+
+.right-btn{
+  padding-top: 10px;
+  color: #999;
+}
+
+.other-way{
+  font-size: 12px;
+  color: #C1C1C1;
+}
+
+.other-way img{
+  margin-left: 8px;
+}
+
+.login-form .yzm-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 110px;
+  height: 37px;
+  border: none;
+  color: #4173FF;
+  cursor: pointer;
+  background: none;
+  text-align: right;
+}
+
+.login-footer{
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  line-height: 20px;
+}

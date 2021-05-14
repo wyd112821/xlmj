@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>寻浪媒介</title>
+    <link rel="stylesheet" href="/assets/css/common.css" />
+    <link rel="stylesheet" href="/assets/layui/css/layui.css" />
+    <link rel="stylesheet" href="/assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
+  </head>
+  <body>
+    <div class="xl-header">
+      <div class="header-top">
+        <div class="content">
+          Hi 欢迎您来到寻浪媒介，软文推广发布一站式服务平台！
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="content">
+          <div class="logo-wraper fl">
+            <a href="/page/index.html">
+              <img src="/assets/img/logo.png" alt="寻浪媒介" />
+            </a>
+          </div>
+
+          <div class="nav-wraper fl">
+            <ul>
+              <li class="cur"><a href="/page/index.html">首页</a></li>
+              <li><a href="/page/resources.html">官媒资源</a></li>
+              <li><a href="/page/resources.html">自媒体资源</a></li>
+              <li><a href="/page/resources.html">软文营销</a></li>
+              <li><a href="/page/dlhz.html">加盟合作</a></li>
+              <li><a href="/page/sxy.html">商学院</a></li>
+              <li><a href="/page/zzfw.html">增值服务</a></li>
+              <li><a href="/page/about.html">关于我们</a></li>
+            </ul>
+          </div>
+
+          <div class="header-right-wraper fr">
+            <div class="search-wraper fl">
+              <form action="" method="get" class="search-box">
+                <input
+                  type="text"
+                  placeholder="请输入媒体名称"
+                  name="gjz"
+                  autocomplete="off"
+                />
+                <button type="submit" class="search-submit"></button>
+                <span class="search-mask" style="display: block"></span>
+              </form>
+            </div>
+            <div class="btns-waper fr">
+              <a href="/page/login.html" class="login-reg-btn">登录/注册</a>
+              <!-- <a href="">进入用户中心</a>
+            <a href="">退出</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-wraper">
+      <div class="content">
+        <div class="banner-form">
+          <h2>为你提供专业的投放服务</h2>
+          <form class="layui-form">
+            <div class="form-item">
+              <label for="server">选择您要的服务</label>
+              <input
+                type="text"
+                name="server"
+                autocomplete="off"
+                lay-verify="required"
+              />
+            </div>
+            <div class="form-item">
+              <label for="name">姓名（选填）</label>
+              <input type="text" name="name" autocomplete="off" />
+            </div>
+            <div class="form-item">
+              <label for="tel">联系方式</label>
+              <input
+                type="text"
+                name="tel"
+                placeholder="方便第一时间获取准确报价"
+                autocomplete="off"
+                lay-verify="required"
+              />
+            </div>
+            <button
+              class="layui-btn layui-btn-fluid layui-btn-radius"
+              lay-submit=""
+              lay-filter="submit-btn"
+            >
+              提交
+            </button>
+          </form>
+        </div>
+
+        <div class="number-wraper">
+          <div class="number-item fl">
+            <p class="num"><strong class="number1">8646</strong>个</p>
+            <p class="desc">官媒数量</p>
+          </div>
+          <div class="number-item fl">
+            <p class="num"><strong class="number2">1995</strong>个</p>
+            <p class="desc">自媒体数量</p>
+          </div>
+          <div class="number-item fl">
+            <p class="num"><strong class="number3">90</strong>%</p>
+            <p class="desc">主流媒体覆盖率</p>
+          </div>
+          <div class="number-item fl">
+            <p class="num"><strong class="number4">20000</strong>篇</p>
+            <p class="desc">昨日软文发稿量</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="advantage-wraper">
+      <div class="title-wraper">
+        <h2>产品优势</h2>
+        <p>
+          一站式软文新闻稿自助发稿平台，以客户为导向满足不同行业的软文推广诉求
+        </p>
+      </div>
+      <div class="advantage-box">
+        <ul>
+          <li>
+            <img src="/assets/img/advantage_icon1.png" alt="一手价格" />
+            <h3>一手价格</h3>
+            <p>一手资源，省去多层环节，可节省至少50%推广成本！</p>
+          </li>
+          <li>
+            <img src="/assets/img/advantage_icon2.png" alt="全网覆盖" />
+            <h3>全网覆盖</h3>
+            <p>24小时自助发布，上万家优质媒体，效率高，质量好！</p>
+          </li>
+          <li>
+            <img src="/assets/img/advantage_icon3.png" alt="疾速发稿" />
+            <h3>疾速发稿</h3>
+            <p>30分钟出稿，延迟出稿，广告主可自行取消订单并退款！</p>
+          </li>
+          <li>
+            <img src="/assets/img/advantage_icon4.png" alt="功能齐全" />
+            <h3>功能齐全</h3>
+            <p>定期上线新功能，为媒体主和广告主全天候服务！</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="problem-wraper">
+      <div class="title-wraper">
+        <h2>你是否遇到以下问题</h2>
+        <p>以软文营销的方式塑造企业形象，提高企业曝光</p>
+      </div>
+      <div class="problem-box">
+        <div class="problem-item fl">
+          <h3 class="icon1">缺少知名度</h3>
+          <p>手上有好产品，但缺少知名度，难以获得用户信任</p>
+        </div>
+        <div class="problem-item fr">
+          <h3 class="icon1">成本高</h3>
+          <p>想要做推广，不是成本高，就是效果甚微</p>
+        </div>
+        <div class="problem-item fl">
+          <h3 class="icon1">效果甚微</h3>
+          <p>该做的都做了，百度、360、搜狗等各大搜索上找不到公司相关信息</p>
+        </div>
+        <div class="problem-item fr">
+          <h3 class="icon1">渠道混杂</h3>
+          <p>做新闻源，想做全渠道铺设品牌信息，却无从下手</p>
+        </div>
+        <div class="problem-item fl">
+          <h3 class="icon1">无权威背书</h3>
+          <p>好产品没有权威媒体做背书，无法赢得客户认可和信任</p>
+        </div>
+        <div class="problem-item fr">
+          <h3 class="icon1">产品无法传播</h3>
+          <p>企业新闻，企业文化理念，无法有效地对外传播出去</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-wraper">
+      <div class="title-wraper">
+        <h2>精选客户案例</h2>
+        <p>官媒媒体+自媒体全网联动，分秒传播，企业用了都说好</p>
+      </div>
+      <div class="case-box">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="case-img fl">
+                <img src="https://temp.im/632x394" />
+              </div>
+              <div class="case-info fr">
+                <h3>Data+2020安徽大数据应用创新与建模大赛</h3>
+                <p>
+                  全网覆盖，提升品牌知名度，增强客户信任感！让你的企业资讯在分秒间，精准，快速传播，立竿见影！低成本推广，高质量传播，品牌提升只差一个寻浪媒介！
+                </p>
+                <a href="" class="btn">立即咨询</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="case-img fl">
+                <img src="https://temp.im/632x394" />
+              </div>
+              <div class="case-info fr">
+                <h3>Data+2020安徽大数据应用创新与建模大赛</h3>
+                <p>
+                  全网覆盖，提升品牌知名度，增强客户信任感！让你的企业资讯在分秒间，精准，快速传播，立竿见影！低成本推广，高质量传播，品牌提升只差一个寻浪媒介！
+                </p>
+                <a href="" class="btn">立即咨询</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="case-img fl">
+                <img src="https://temp.im/632x394" />
+              </div>
+              <div class="case-info fr">
+                <h3>Data+2020安徽大数据应用创新与建模大赛</h3>
+                <p>
+                  全网覆盖，提升品牌知名度，增强客户信任感！让你的企业资讯在分秒间，精准，快速传播，立竿见影！低成本推广，高质量传播，品牌提升只差一个寻浪媒介！
+                </p>
+                <a href="" class="btn">立即咨询</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <div class="resources-wraper">
+      <div class="title-wraper">
+        <h2>海量媒体资源</h2>
+        <p>海量媒体资源，每日不断更新中</p>
+      </div>
+      <div class="resources-box">
+        <div class="roll-wrap">
+          <ul class="roll__list">
+            <li>
+              <img src="/assets/img/resources-img1.png" />
+            </li>
+            <li>
+              <img src="/assets/img/resources-img2.png" />
+            </li>
+            <li>
+              <img src="/assets/img/resources-img1.png" />
+            </li>
+            <li>
+              <img src="/assets/img/resources-img2.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="process-wraper">
+      <div class="title-wraper">
+        <h2>使用流程</h2>
+        <p>简洁易用 一键发布24小时自助发布平台</p>
+      </div>
+      <div class="swiper-container process-box">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="process-slide">
+              <ul>
+                <li class="item">
+                  <i class="icon1"></i>
+                  <p>注册发稿平台</p>
+                </li>
+                <li class="line">
+                  <img src="/assets/img/process-line.png">
+                </li>
+                <li class="item">
+                  <i class="icon2"></i>
+                  <p>充值发稿费用</p>
+                </li>
+                <li class="line">
+                  <img src="/assets/img/process-line.png">
+                </li>
+                <li class="item">
+                  <i class="icon3"></i>
+                  <p>后台提交稿件</p>
+                </li>
+                <li class="line">
+                  <img src="/assets/img/process-line.png">
+                </li>
+                <li class="item">
+                  <i class="icon1"></i>
+                  <p>选择所需媒体</p>
+                </li>
+                <li class="line">
+                  <img src="/assets/img/process-line.png">
+                </li>
+                <li class="item">
+                  <i class="icon1"></i>
+                  <p>确认媒体下单</p>
+                </li>
+              </ul>
+              <a href="" class="btn">立即发布</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="process-slide dl-process">
+              <ul>
+                <li class="item">
+                  <i class="icon1"></i>
+                  <p>在线咨询</p>
+                </li>
+                <li class="line">
+                  <img src="/assets/img/process-line.png">
+                </li>
+                <li class="item">
+                  <i class="icon2"></i>
+                  <p>发送您的需求</p>
+                </li>
+                <li class="line">
+                  <img src="/assets/img/process-line.png">
+                </li>
+                <li class="item">
+                  <i class="icon3"></i>
+                  <p>一对一咨询</p>
+                </li>
+                <li class="line">
+                  <img src="/assets/img/process-line.png">
+                </li>
+                <li class="item">
+                  <i class="icon1"></i>
+                  <p>代理洽谈</p>
+                </li>
+                <li class="line">
+                  <img src="/assets/img/process-line.png">
+                </li>
+                <li class="item">
+                  <i class="icon1"></i>
+                  <p>达成合作</p>
+                </li>
+                <li class="line">
+                  <img src="/assets/img/process-line.png">
+                </li>
+                <li class="item">
+                  <i class="icon1"></i>
+                  <p>全款打款</p>
+                </li>
+                <li class="line">
+                  <img src="/assets/img/process-line.png">
+                </li>
+                <li class="item">
+                  <i class="icon1"></i>
+                  <p>获取权限</p>
+                </li>
+              </ul>
+              <a href="" class="btn">立即咨询</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <div class="partnership-wraper">
+      <div class="title-wraper">
+        <h2>合作加盟</h2>
+        <p>招募行业代理共享信息未来顺势而为赢在平台</p>
+      </div>
+      <div class="partnership-box">
+        <ul>
+          <li>
+            <i class="icon1"></i>
+            <h3>渠道全 价格低</h3>
+            <p>丰富的软文渠道，超低的软文发布价格</p>
+          </li>
+          <li>
+            <i class="icon2"></i>
+            <h3>高利润 丰厚回报</h3>
+            <p>高达30%~200%的惊人利润，代理丰厚收益回报</p>
+          </li>
+          <li>
+            <i class="icon3"></i>
+            <h3>独立域名 个性平台</h3>
+            <p>拥有独立的域名与网页，自主控制个性化平台</p>
+          </li>
+          <li>
+            <i class="icon4"></i>
+            <h3>独立API接口 系统推送</h3>
+            <p>独立平台API接口，系统推送！</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dynamic-wraper">
+      <div class="title-wraper">
+        <h2>寻浪动态</h2>
+        <p>海量自媒体媒介资讯，千万营销干货</p>
+      </div>
+      <img src="/assets/img/dynamic-img.png" class="dynamic-img">
+      <div class="dynamic-box">
+        <div class="activity-box fl">
+          <h3><a href="" target="_blank">最新活动</a></h3>
+          <div class="box">
+            <ul>
+              <li><a href="" target="_blank"><img src="https://temp.im/282x90" alt=""></a></li>
+              <li><a href="" target="_blank"><img src="https://temp.im/282x90" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="news-list fl">
+          <h3><a href="" target="_blank">寻浪头条</a></h3>
+          <div class="box">
+            <ul>
+              <li><a href="" target="_blank">实用广告营销网站大全，乙方爷爷必备！</a></li>
+              <li><a href="" target="_blank">为何投入宣传资金多但效果却不明显？</a></li>
+              <li><a href="" target="_blank">为何投入宣传资金多但效果却不明显？</a></li>
+              <li><a href="" target="_blank">实用广告营销网站大全，乙方爷爷必备！</a></li>
+              <li><a href="" target="_blank">实用广告营销网站大全，乙方爷爷必备！</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="news-list fl">
+          <h3><a href="" target="_blank">商学院</a></h3>
+          <div class="box">
+            <ul>
+              <li><a href="" target="_blank">实用广告营销网站大全，乙方爷爷必备！</a></li>
+              <li><a href="" target="_blank">为何投入宣传资金多但效果却不明显？</a></li>
+              <li><a href="" target="_blank">为何投入宣传资金多但效果却不明显？</a></li>
+              <li><a href="" target="_blank">实用广告营销网站大全，乙方爷爷必备！</a></li>
+              <li><a href="" target="_blank">实用广告营销网站大全，乙方爷爷必备！</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="xl-footer">
+      <div class="publish-banner">
+        <p>发布文章，开启您的互联网营销之路</p>
+        <button class="button button--wapasha">立即发布</button>
+      </div>
+
+      <div class="footer-wraper">
+        <div class="content">
+          <div class="foot-row">
+            <div class="foot-logo-box fl">
+              <img src="/assets/img/logo.png" alt="寻浪媒介" class="logo" />
+              <p class="hotline">客服热线 400-993-9050</p>
+              <img src="/assets/img/qrcode.png" class="qrcode" />
+            </div>
+
+            <div class="foot-nav fr">
+              <dl>
+                <dt><a href="">首页</a></dt>
+                <dd><a href="">营销案例</a></dd>
+                <dd><a href="">我们的服务</a></dd>
+                <dd><a href="">发布流程</a></dd>
+                <dd><a href="">代理流程</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="">资源</a></dt>
+                <dd><a href="">官媒列表</a></dd>
+                <dd><a href="">推荐媒体</a></dd>
+                <dd><a href="">新增媒体</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="">加盟合作</a></dt>
+                <dd><a href="">我们的优势</a></dd>
+                <dd><a href="">代理权益</a></dd>
+                <dd><a href="">等级权益</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="">增值服务</a></dt>
+                <dd><a href="">活动策划</a></dd>
+                <dd><a href="">品牌策划</a></dd>
+                <dd><a href="">新媒体运营</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="">商学院</a></dt>
+                <dd><a href="">品牌曝光</a></dd>
+                <dd><a href="">推广案例</a></dd>
+                <dd><a href="">寻浪头条</a></dd>
+                <dd><a href="">营销课堂</a></dd>
+              </dl>
+              <dl>
+                <dt><a href="">关于我们</a></dt>
+                <dd><a href="">企业介绍</a></dd>
+                <dd><a href="">员工风采</a></dd>
+                <dd><a href="">联系我们</a></dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="foot-flink">
+            友情链接：
+            <a href="" target="_blank">聚名科技</a>
+            <a href="" target="_blank">雷米科技</a>
+            <a href="" target="_blank">玩米网</a>
+            <a href="" target="_blank">易企服</a>
+            <a href="" target="_blank">龙门标局</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          Copyright © 2021 合肥寻浪传媒有限公司 皖公网安备 33011002015248号
+          皖ICP备20012079号-3
+        </div>
+      </div>
+    </div>
+
+    <div class="xl-sidebar">
+      <ul>
+        <li class="contact-us">
+          <i class="icon icon1"></i>
+          <p class="ms">联系我们</p>
+          <div class="contact-box">
+            <div class="code fl">
+              <img src="/assets/img/wxcode.png">
+              <p>扫码加微信</p>
+            </div>
+            <dic class="content fr">
+              专属客服：罗焱<br>
+              QQ：1033159789<br>
+              电话：13966872341
+            </dic>
+          </div>
+        </li>
+        <li>
+          <i class="icon icon2"></i>
+          <p class="ms">我要发稿</p>
+        </li>
+        <li class="back-top">
+          <i class="icon icon3"></i>
+          <p class="ms">返回顶部</p>
+        </li>
+      </ul>
+    </div>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/layui/layui.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/jquery.leoTextAnimate.js"></script>
+    <script src="/assets/js/swiper.min.js"></script>
+    <script src="/assets/js/rollSlide.js"></script>
+    <script>
+      layui.use(['form'], function () {
+        var form = layui.form
+
+        // 投放服务表单提交
+        form.on('submit(submit-btn)', function (data) {
+          var field = data.field
+          console.log('field: ', field)
+          return false
+        })
+
+        // 数字滚动动画
+        $('.number1').leoTextAnimate({
+          delay: 1000,
+          autorun: true,
+          fixed: [',', ':', '.'],
+          start: '0',
+        })
+        $('.number2').leoTextAnimate({
+          delay: 1200,
+          autorun: true,
+          fixed: [',', ':', '.'],
+          start: '0',
+        })
+        $('.number3').leoTextAnimate({
+          delay: 1400,
+          autorun: true,
+          fixed: [',', ':', '.'],
+          start: '0',
+        })
+        $('.number4').leoTextAnimate({
+          delay: 1600,
+          autorun: true,
+          fixed: [',', ':', '.'],
+          start: '0',
+        })
+
+        // 案例轮播图
+        new Swiper('.case-box .swiper-container', {
+          centeredSlides: true,
+          loop: true,
+          navigation: {
+            nextEl: '.case-box .swiper-button-next',
+            prevEl: '.case-box .swiper-button-prev',
+          },
+        })
+
+        // 资源轮播
+        $('.roll-wrap').rollNoInterval().left();
+
+        // 流程tab切换
+        new Swiper('.process-box', {
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+              switch (index) {
+                case 0:
+                  return '<span class="' + className + '">发布流程</span>'
+                  break
+                case 1:
+                  return '<span class="' + className + '">代理流程</span>'
+                  break
+              }
+            },
+          },
+        })
+      });
+    </script>
+  </body>
+</html>
