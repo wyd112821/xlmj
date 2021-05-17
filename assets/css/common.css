@@ -362,7 +362,7 @@ input:focus{ outline: none;}
 }
 
 .foot-nav dl dd a:hover{
-  color: #3269FF;
+  color: #fff;
 }
 
 .foot-flink{
@@ -377,7 +377,7 @@ input:focus{ outline: none;}
   color: rgba(255, 255, 255, 0.3);
 }
 .foot-flink a:hover{
-  color: #3269FF;
+  color: #fff;
 }
 
 .footer-bottom{
@@ -389,8 +389,8 @@ input:focus{ outline: none;}
 
 .xl-sidebar{
   position: fixed;
-  bottom: 100px;
-  left: 50%;
+  bottom: 60px;
+  right: 20px;
   z-index: 101;
   margin-left: 620px;
   width: 80px;

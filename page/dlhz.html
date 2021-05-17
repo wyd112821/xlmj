@@ -520,10 +520,25 @@
     // 伙伴语录进度条轮播
     var curIdx = 0;
     var t = 5;
+    var quotInter;
     var $parnetItem = $('.partner-list li');
     var $parnetInfo = $('.partner-info p');
     var $circle = $('.alert-sec-circle');
-    setInterval(function(){
+
+    quotInter =  setInterval(progressSwiper, 600);
+
+    $parnetItem.on('click', function() {
+      curIdx = $(this).index();
+      
+      clearInterval(quotInter);
+      $circle.css({
+        "stroke-dashoffset": 0
+      })
+      t = 5;
+      quotInter =  setInterval(progressSwiper, 600);
+    })
+
+    function progressSwiper() {
       if (0 == t){
         if(curIdx == 4) {
           curIdx = 0;
@@ -543,7 +558,7 @@
         $parnetItem.eq(curIdx).addClass('cur').siblings().removeClass('cur');
         $parnetInfo.eq(curIdx).addClass('cur').siblings().removeClass('cur');
       }
-    }, 600);
+    }
 
     // 代理等级table头部滚动顶部悬浮
     $(window).scroll(function () {
